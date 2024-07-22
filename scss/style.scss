@@ -47,6 +47,7 @@ $nav-link-hover-color: black;
     width: 100%;
     height: 100%;
     z-index: 2;
+    pointer-events: none;
 }
 .heroBackShape {
     height: 75%;
@@ -57,4 +58,8 @@ $nav-link-hover-color: black;
 
 .heroImg {
     z-index: 3;
+}
+
+.cardButton {
+    border-top: 5px dotted lightgray;
 }
