@@ -1,0 +1,39 @@
+$primary: #5265E1;
+$secondary: #FA5959;
+
+.btn-secondary {
+    --bs-btn-color: #fff !important;
+}
+
+.navbar-nav {
+    letter-spacing: 1px;
+}
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+
+/* Non-bootstrap CSS **/
+
+.relaDiv {
+    position: relative;
+}
+
+.heroBackShapeDiv {
+    position: absolute;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+.heroBackShape {
+    height: 75%;
+    width: 35%;
+    background-color: #5265E1;
+    border-radius:  27% / 100% 0% 0% 100%;
+}
+
+.heroImg {
+    z-index: 3;
+}
