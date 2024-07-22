@@ -9,6 +9,27 @@ $secondary: #FA5959;
     letter-spacing: 1px;
 }
 
+
+$nav-link-color: grey;
+$nav-link-hover-color: black;
+
+.nav-tabs .active {
+    border: none !important;
+    border-bottom: 3px solid $secondary !important;
+}
+
+@media (max-width: 768px) {
+    .nav-tabs {
+        border: none !important;
+    }
+    .nav-tabs .nav-link {
+        border-bottom: 1px solid lightgray !important;
+    }
+    .nav-tabs .active {
+        border-bottom: 3px solid $secondary !important;
+    }
+}
+
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 
@@ -30,8 +51,8 @@ $secondary: #FA5959;
 .heroBackShape {
     height: 75%;
     width: 35%;
-    background-color: #5265E1;
-    border-radius:  27% / 100% 0% 0% 100%;
+    background-color: $primary;
+    border-radius: 50% / 100% 0% 0% 100%;
 }
 
 .heroImg {
