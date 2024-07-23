@@ -11895,6 +11895,15 @@ textarea.form-control-lg {
   z-index: 3;
 }
 
+.cardsDiv {
+  height: 530px;
+}
+
+@media (max-width: 992px) {
+  .cardsDiv {
+    height: auto;
+  }
+}
 .cardButton {
   border-top: 5px dotted lightgray;
 }
