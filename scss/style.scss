@@ -1,8 +1,21 @@
 $primary: #5265E1;
 $secondary: #FA5959;
 
+.btn-primary:hover {
+    background-color: #fff !important;
+    color: #777777 !important;
+}
+.btn-light:hover {
+    background-color: #fff !important;
+    color: $primary !important;
+}
+
 .btn-secondary {
     --bs-btn-color: #fff !important;
+}
+.btn-secondary:hover {
+    background-color: #fff !important;
+    color: $secondary !important;
 }
 
 .navbar-nav {
@@ -11,7 +24,7 @@ $secondary: #FA5959;
 
 
 $nav-link-color: grey;
-$nav-link-hover-color: black;
+$nav-link-hover-color: $secondary;
 
 .nav-tabs .active {
     border: none !important;
@@ -29,6 +42,17 @@ $nav-link-hover-color: black;
         border-bottom: 3px solid $secondary !important;
     }
 }
+
+$navbar-light-hover-color: $secondary;
+
+$accordion-button-active-bg: none;
+$accordion-button-active-color: $secondary;
+$accordion-button-focus-box-shadow: none;
+$accordion-icon-color: $primary;
+$accordion-icon-active-color: $secondary;
+
+$form-feedback-invalid-color: $secondary;
+$form-feedback-valid-color: $primary;
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 
@@ -74,4 +98,7 @@ $nav-link-hover-color: black;
 }
 .footerLinkText {
     letter-spacing: 1px;
+}
+.footerLinkText a:hover {
+    color: $secondary;
 }
